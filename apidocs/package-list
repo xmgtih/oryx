@@ -18,6 +18,7 @@ com.cloudera.oryx.app.serving.rdf
 com.cloudera.oryx.app.serving.rdf.model
 com.cloudera.oryx.app.speed.als
 com.cloudera.oryx.app.speed.kmeans
+com.cloudera.oryx.app.speed.rdf
 com.cloudera.oryx.batch
 com.cloudera.oryx.common
 com.cloudera.oryx.common.collection
