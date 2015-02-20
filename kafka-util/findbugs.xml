@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BugCollection version='3.0.0' threshold='' effort='max'><Error></Error><Project><SrcDir>/Users/srowen/Documents/Cloudera/Oryx/oryx2/kafka-util/src/main/java</SrcDir><SrcDir>/Users/srowen/Documents/Cloudera/Oryx/oryx2/kafka-util/src/test/java</SrcDir></Project></BugCollection>
+<BugCollection version='3.0.0' threshold='' effort='max'><Error></Error><Project><SrcDir>/private/tmp/oryx/kafka-util/src/main/java</SrcDir><SrcDir>/private/tmp/oryx/kafka-util/src/test/java</SrcDir></Project></BugCollection>

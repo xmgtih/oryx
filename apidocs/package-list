@@ -1,4 +1,6 @@
+com.cloudera.oryx.app.als
 com.cloudera.oryx.app.common.fn
+com.cloudera.oryx.app.kmeans
 com.cloudera.oryx.app.mllib.als
 com.cloudera.oryx.app.mllib.kmeans
 com.cloudera.oryx.app.mllib.rdf
