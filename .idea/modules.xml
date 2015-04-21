@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-util/kafka-util.iml" filepath="$PROJECT_DIR$/kafka-util/kafka-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx.iml" filepath="$PROJECT_DIR$/oryx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-api/oryx-api.iml" filepath="$PROJECT_DIR$/oryx-api/oryx-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-app/oryx-app.iml" filepath="$PROJECT_DIR$/oryx-app/oryx-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-app-api/oryx-app-api.iml" filepath="$PROJECT_DIR$/oryx-app-api/oryx-app-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-app-common/oryx-app-common.iml" filepath="$PROJECT_DIR$/oryx-app-common/oryx-app-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-app-mllib/oryx-app-mllib.iml" filepath="$PROJECT_DIR$/oryx-app-mllib/oryx-app-mllib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-app-serving/oryx-app-serving.iml" filepath="$PROJECT_DIR$/oryx-app-serving/oryx-app-serving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-batch/oryx-batch.iml" filepath="$PROJECT_DIR$/oryx-batch/oryx-batch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-common/oryx-common.iml" filepath="$PROJECT_DIR$/oryx-common/oryx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-lambda/oryx-lambda.iml" filepath="$PROJECT_DIR$/oryx-lambda/oryx-lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-lambda-serving/oryx-lambda-serving.iml" filepath="$PROJECT_DIR$/oryx-lambda-serving/oryx-lambda-serving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-ml/oryx-ml.iml" filepath="$PROJECT_DIR$/oryx-ml/oryx-ml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-serving/oryx-serving.iml" filepath="$PROJECT_DIR$/oryx-serving/oryx-serving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oryx-speed/oryx-speed.iml" filepath="$PROJECT_DIR$/oryx-speed/oryx-speed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-util/zk-util.iml" filepath="$PROJECT_DIR$/zk-util/zk-util.iml" />
+    </modules>
+  </component>
+</project>
+

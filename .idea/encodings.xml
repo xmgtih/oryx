@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-app-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-app-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-app-mllib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-app-serving" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-batch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-lambda" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-lambda-serving" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-ml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-serving" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oryx-speed" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zk-util" charset="UTF-8" />
+  </component>
+</project>
+

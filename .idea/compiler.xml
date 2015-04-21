@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="false">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="example" />
+        <module name="kafka-util" />
+        <module name="oryx-api" />
+        <module name="oryx-app" />
+        <module name="oryx-app-api" />
+        <module name="oryx-app-common" />
+        <module name="oryx-app-mllib" />
+        <module name="oryx-app-serving" />
+        <module name="oryx-batch" />
+        <module name="oryx-common" />
+        <module name="oryx-lambda" />
+        <module name="oryx-lambda-serving" />
+        <module name="oryx-ml" />
+        <module name="oryx-serving" />
+        <module name="oryx-speed" />
+        <module name="zk-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example" target="1.7" />
+      <module name="kafka-util" target="1.7" />
+      <module name="oryx-api" target="1.7" />
+      <module name="oryx-app" target="1.7" />
+      <module name="oryx-app-api" target="1.7" />
+      <module name="oryx-app-common" target="1.7" />
+      <module name="oryx-app-mllib" target="1.7" />
+      <module name="oryx-app-serving" target="1.7" />
+      <module name="oryx-batch" target="1.7" />
+      <module name="oryx-common" target="1.7" />
+      <module name="oryx-lambda" target="1.7" />
+      <module name="oryx-lambda-serving" target="1.7" />
+      <module name="oryx-ml" target="1.7" />
+      <module name="oryx-serving" target="1.7" />
+      <module name="oryx-speed" target="1.7" />
+      <module name="zk-util" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
+
