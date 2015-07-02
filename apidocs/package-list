@@ -45,4 +45,3 @@ com.cloudera.oryx.ml
 com.cloudera.oryx.ml.param
 com.cloudera.oryx.serving
 com.cloudera.oryx.speed
-com.cloudera.oryx.zk
