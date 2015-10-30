@@ -35,7 +35,9 @@ com.cloudera.oryx.common.pmml
 com.cloudera.oryx.common.random
 com.cloudera.oryx.common.settings
 com.cloudera.oryx.common.text
-com.cloudera.oryx.example
+com.cloudera.oryx.example.batch
+com.cloudera.oryx.example.serving
+com.cloudera.oryx.example.speed
 com.cloudera.oryx.kafka.util
 com.cloudera.oryx.lambda
 com.cloudera.oryx.lambda.batch
