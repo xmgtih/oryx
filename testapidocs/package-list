@@ -3,13 +3,13 @@ com.cloudera.oryx.app.batch.mllib
 com.cloudera.oryx.app.batch.mllib.als
 com.cloudera.oryx.app.batch.mllib.kmeans
 com.cloudera.oryx.app.batch.mllib.rdf
+com.cloudera.oryx.app.classreg.example
+com.cloudera.oryx.app.classreg.predict
 com.cloudera.oryx.app.common.fn
 com.cloudera.oryx.app.kmeans
 com.cloudera.oryx.app.pmml
 com.cloudera.oryx.app.rdf
 com.cloudera.oryx.app.rdf.decision
-com.cloudera.oryx.app.rdf.example
-com.cloudera.oryx.app.rdf.predict
 com.cloudera.oryx.app.rdf.tree
 com.cloudera.oryx.app.schema
 com.cloudera.oryx.app.serving.als
