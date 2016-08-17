@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import com.cloudera.oryx.common.math.VectorMath;
 import com.cloudera.oryx.common.random.RandomManager;
-
+/*文章可以参考http://stackoverflow.com/questions/12952729/how-to-understand-locality-sensitive-hashing*/
 final class LocalitySensitiveHash {
 
   static final int MAX_HASHES = 16;
@@ -76,9 +76,8 @@ final class LocalitySensitiveHash {
     log.info("LSH with {} hashes, querying partitions with up to {} bits differing", numHashes, bitsDiffering);
     this.maxBitsDiffering = bitsDiffering;
     hashVectors = new float[numHashes][];
-
     RandomGenerator random = RandomManager.getRandom();
-    for (int i = 0; i < numHashes; i++) {
+    for (int i = 0; i < numHashes; i++) {//随机生成numHash个hash向量
       // Pick the most-orthogonal next random vector
       double bestTotalDot = Double.POSITIVE_INFINITY;
       float[] nextBest = null;
@@ -141,8 +140,9 @@ final class LocalitySensitiveHash {
    */
   int getIndexFor(float[] vector) {
     int index = 0;
-    for (int i = 0; i < hashVectors.length; i++) {
-      if (VectorMath.dot(hashVectors[i], vector) > 0.0) {
+    for (int i = 0; i < hashVectors.length; i++) {//和各个hash向量求得内积
+      if (VectorMath.dot(hashVectors[i], vector) > 0.0) {//当前内积大于0,则将当前index所在的位置为1.
+        // 说明当前vector在hashVector[i]的下方
         index |= 1 << i;
       }
     }
@@ -164,9 +164,9 @@ final class LocalitySensitiveHash {
       return new int[] { mainIndex };
     }
     // Other cases
-    int howMany = 0;
+    int howMany = 0;//howMany符合条件的候选
     for (int i = 0; i <= maxBitsDiffering; i++) {
-      howMany += (int) CombinatoricsUtils.binomialCoefficient(numHashes, i);
+      howMany += (int) CombinatoricsUtils.binomialCoefficient(numHashes, i);//howMany符合条件的候选
     }
     int[] result = new int[howMany];
     System.arraycopy(candidateIndicesPrototype, 0, result, 0, howMany);
