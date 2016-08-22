@@ -48,13 +48,16 @@ final class LocalitySensitiveHash {
 
       // For a given number of hashes, consider partitions differing from the target hash in how many bits?
       // Choose enough such that number to test is as large as possible while <= the number of cores
+      //对于给定的hash个数，
       bitsDiffering = 0;
       // Number of different partitions that are examined when allowing the given number of bits to differ
+      //
       long numPartitionsToTry = 1;
       // Make bitsDiffering as large as possible given number of cores
       while (bitsDiffering < numHashes && numPartitionsToTry < numCores) {
         // There are numHashes-choose-bitsDiffering ways for numHashes bits to differ in
         // exactly bitsDiffering bits
+        //对于确定的hash个数和每个hash有固定的bits.可以算出
         bitsDiffering++;
         numPartitionsToTry += CombinatoricsUtils.binomialCoefficient(numHashes, bitsDiffering);
       }
@@ -79,22 +82,23 @@ final class LocalitySensitiveHash {
     RandomGenerator random = RandomManager.getRandom();
     for (int i = 0; i < numHashes; i++) {//随机生成numHash个hash向量
       // Pick the most-orthogonal next random vector
-      double bestTotalDot = Double.POSITIVE_INFINITY;
+      //选择下一个最正交的随机向量
+      double bestTotalDot = Double.POSITIVE_INFINITY;//初始化为最大
       float[] nextBest = null;
       // Try, like, lots of them
       int candidatesSinceBest = 0;
-      while (candidatesSinceBest < 1000) {
-        float[] candidate = VectorMath.randomVectorF(numFeatures, random);
+      while (candidatesSinceBest < 1000) {//循环一千次，选取一个最为正交的
+        float[] candidate = VectorMath.randomVectorF(numFeatures, random);//随机生成一个向量
         // measure by total (absolute) dot product
-        double score = totalAbsCos(hashVectors, i, candidate);
-        if (score < bestTotalDot) {
+        double score = totalAbsCos(hashVectors, i, candidate);//
+        if (score < bestTotalDot) {//越小越好
           nextBest = candidate;
           // Stop if best possible score
           if (score == 0.0) {
             break;
           }
           bestTotalDot = score;
-          candidatesSinceBest = 0;
+          candidatesSinceBest = 0;//找到一次最好的，就重置，再找一个循环（1000次），直到下一个循环找不到更正交的了
         } else {
           candidatesSinceBest++;
         }
